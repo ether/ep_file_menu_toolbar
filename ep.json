@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "file_menu_toolbar",
+      "client_hooks": {
+        "postAceInit": "ep_file_menu_toolbar/static/js/index:documentReady"
+      },
+      "hooks": {
+        "eejsBlock_body":"ep_file_menu_toolbar/eejs",
+        "clientVars":"ep_file_menu_toolbar/index:clientVars",
+        "eejsBlock_styles":"ep_file_menu_toolbar/eejs"
+      }
+    }
+  ]
+}
