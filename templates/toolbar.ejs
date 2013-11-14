@@ -3,15 +3,20 @@
         <a href="#">File</a>
         <ul>
             <li>
-               <li><a href="#"data-key="save">Save</a></li>
-               <li><a href="#"data-key="bold">Import</a></li>
-               <li><a href="#"data-key="italic">Export</a></li>
+               <li><a href="#" data-key="save" id="revisionlink">Save</a></li>
+               <li><a href="#" id="importexportlink" data-key="import_export">Import</a></li>
+               <li><a href="#" data-key="export">Export</a>
+                 <ul>
+                    <li><a href="#" id="exportplain">Text</a></li>
+                    <li><a href="#" id="exporthtmla">HTML</a></li>
+                 </ul>
+               </li>
                <hr></hr>
-               <li><a href="#"data-key="timeslider">Timeslider</a></li>
-               <li><a href="#"data-key="showchat">Show Chat</a></li>
+               <li><a href="#" data-key="timesliderlink">Timeslider</a></li>
+               <li><a href="#" data-key="showchat">Show Chat</a></li>
                <hr></hr>
-               <li><a href="#"data-key="settings">Pad Settings</a></li>
-               <li><a href="#"data-key="underline">Share & Embed</a></li>
+               <li><a href="#" data-key="settings">Pad Settings</a></li>
+               <li><a href="#" data-key="underline" id="embedlink">Share & Embed</a></li>
             </li>
         </ul>
     </li>
@@ -19,13 +24,8 @@
         <a href="#">Edit</a>
         <ul>
             <li>
-               <li><a href="#"data-key="undo">Undo</a></li>
-               <li><a href="#"data-key="redo">Redo</a></li>
-                <a href="#">Submenu Item</a>
-                <ul>
-                    <li><a href="#">Submenu Item 1</a></li>
-                    <li><a href="#">Submenu Item 2</a></li>
-                </ul>
+               <li><a href="#" data-key="undo">Undo</a></li>
+               <li><a href="#" data-key="redo">Redo</a></li>
             </li>
         </ul>
      <li>
@@ -33,24 +33,17 @@
         <a href="#">Format</a>
         <ul>
             <li>
-               <li><a href="#"data-key="bold">Bold</a></li>
-               <li><a href="#"data-key="italic">Italic</a></li>
-               <li><a href="#"data-key="underline">Underline</a></li>
-               <li><a href="#"data-key="Strikethrough">Strikethrough</a></li>
+               <li><a href="#" data-key="bold">Bold</a></li>
+               <li><a href="#" data-key="italic">Italic</a></li>
+               <li><a href="#" data-key="underline">Underline</a></li>
+               <li><a href="#" data-key="Strikethrough">Strikethrough</a></li>
                <hr></hr>
-               <li><a href="#"data-key="insertorderedlist">Ordered List</a></li>
-               <li><a href="#"data-key="insertunorderedlist">Unordered list</a></li>
-               <li><a href="#"data-key="indent">Indent</a></li>
-               <li><a href="#"data-key="outdent">Outdent</a></li>
+               <li><a href="#" data-key="insertorderedlist">Ordered List</a></li>
+               <li><a href="#" data-key="insertunorderedlist">Unordered list</a></li>
+               <li><a href="#" data-key="indent">Indent</a></li>
+               <li><a href="#" data-key="outdent">Outdent</a></li>
                <hr></hr>
-               <li><a href="#"data-key="clearauthorship">Clear Authorship Colors</a></li>
-
-
-                <a href="#">Submenu Item</a>
-                <ul>
-                    <li><a href="#">Submenu Item 1</a></li>
-                    <li><a href="#">Submenu Item 2</a></li>
-                </ul>
+               <li><a href="#" data-key="clearauthorship">Clear Authorship Colors</a></li>
             </li>
         </ul>
 
@@ -60,12 +53,12 @@
         <a href="#">View</a>
         <ul>
             <li>
-               <li><a href="#"data-key="bold">Chat</a></li>
-               <li><a href="#"data-key="italic">Italic</a></li>
-               <li><a href="#"data-key="underline">Underline</a></li>
-               <li><a href="#"data-key="Strikethrough">Strikethrough</a></li>
+               <li><a href="#" data-key="bold">Chat</a></li>
+               <li><a href="#" data-key="italic">Italic</a></li>
+               <li><a href="#" data-key="underline">Underline</a></li>
+               <li><a href="#" data-key="Strikethrough">Strikethrough</a></li>
                <hr></hr>
-               <li><a href="#"data-key="clearauthorship">Clear Authorship Colors</a></li>
+               <li><a href="#" data-key="clearauthorship">Clear Authorship Colors</a></li>
             </li>
         </ul>
 
@@ -77,6 +70,19 @@
 <style type="text/css">
 #editorcontainerbox{
   top:23px;
+}
+.stickyChat{
+  top:61px;
+}
+.dropdown-menu-sub-indicator > ul {
+  border:1px solid rgb(204, 204, 204);
+  border-radius:0px 0px 6px 6px;
+  box-shadow: 0px 2px 4px rgb(221, 221, 221);
+  background:linear-gradient(rgb(247, 247, 247), rgb(238, 238, 238)) repeat scroll 0% 0% transparent;
+  padding:10px;
+}
+.dropdown-menu-sub-indicator > ul > hr{
+  margin:10px 0px 10px 0px;
 }
 </style>
 
