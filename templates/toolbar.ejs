@@ -3,7 +3,7 @@
         <a href="#">File</a>
         <ul>
             <li>
-               <li><a href="#" data-key="save" id="revisionlink">Save</a></li>
+               <li><a href="#" data-key="save" id="revisionlink"><u>S</u>ave</a></li>
                <li><a href="#" id="importexportlink" data-key="import_export">Import</a></li>
                <li><a href="#" data-key="export">Export</a>
                  <ul>
@@ -12,11 +12,10 @@
                  </ul>
                </li>
                <hr></hr>
-               <li><a href="#" data-key="timesliderlink">Timeslider</a></li>
-               <li><a href="#" data-key="showchat">Show Chat</a></li>
+               <li onclick="document.location = document.location.pathname+ '/timeslider'"><a href="#" id="timesliderlink">Timeslider</a></li>
                <hr></hr>
                <li><a href="#" data-key="settings">Pad Settings</a></li>
-               <li><a href="#" data-key="underline" id="embedlink">Share & Embed</a></li>
+               <li><a href="#" data-key="embed" id="embedlink">Share & Embed</a></li>
             </li>
         </ul>
     </li>
@@ -33,9 +32,9 @@
         <a href="#">Format</a>
         <ul>
             <li>
-               <li><a href="#" data-key="bold">Bold</a></li>
-               <li><a href="#" data-key="italic">Italic</a></li>
-               <li><a href="#" data-key="underline">Underline</a></li>
+               <li><a href="#" data-key="bold"><u>B</u>old</a></li>
+               <li><a href="#" data-key="italic"><u>I</u>talic</a></li>
+               <li><a href="#" data-key="underline"><u>U</u>nderline</a></li>
                <li><a href="#" data-key="Strikethrough">Strikethrough</a></li>
                <hr></hr>
                <li><a href="#" data-key="insertorderedlist">Ordered List</a></li>
@@ -53,12 +52,16 @@
         <a href="#">View</a>
         <ul>
             <li>
-               <li><a href="#" data-key="bold">Chat</a></li>
-               <li><a href="#" data-key="italic">Italic</a></li>
-               <li><a href="#" data-key="underline">Underline</a></li>
-               <li><a href="#" data-key="Strikethrough">Strikethrough</a></li>
-               <hr></hr>
-               <li><a href="#" data-key="clearauthorship">Clear Authorship Colors</a></li>
+               <li><a href="#" onClick="chat.stickToScreen();">Chat</a></li>
+            </li>
+        </ul>
+
+    </li>
+   <li>
+        <a href="#">Help</a>
+        <ul>
+            <li>
+               <li>File Menu Toolbar plugin by John McLear</li>
             </li>
         </ul>
 
