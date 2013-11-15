@@ -5,7 +5,5 @@ Install using /admin/plugins or npm install ep_file_menu_toolbar
 
 ## TODO
 i18n support
-Nice styling
-Responsive CSS
 Test against weird wrap/pad scrolling edge cases
-Clean refactor
+Clean refactor <-- see .ejs file!
