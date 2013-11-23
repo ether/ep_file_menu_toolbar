@@ -11,6 +11,8 @@
     text-decoration: none;
     color: #393939;
     padding: 5px 9px;
+    cursor:pointer;
+    cursor:hand;
 }
 /* Root link hover */
 .dropdown-menu a:hover,
