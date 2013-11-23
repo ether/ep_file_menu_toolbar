@@ -1,8 +1,10 @@
 <ul class="dropdown-menu" id="editbar">
+    <% e.begin_block("dd_dropdownMenu"); %>
     <li>
         <a href="#">File</a>
         <ul>
             <li>
+               <% e.begin_block("dd_file"); %>
                <li><a href="#" data-key="save" id="revisionlink"><u>S</u>ave</a></li>
                <li><a href="#" id="importexportlink" data-key="import_export">Import</a></li>
                <li><a href="#" data-key="export">Export</a>
@@ -17,6 +19,7 @@
                <li><a href="#" data-key="settings">Pad Settings</a></li>
                <li><a href="#" data-key="print" onClick="window.print()">Print</a></li>
                <li><a href="#" data-key="embed" id="embedlink">Share & Embed</a></li>
+               <% e.end_block(); %>
             </li>
         </ul>
     </li>
@@ -24,8 +27,10 @@
         <a href="#">Edit</a>
         <ul>
             <li>
+               <% e.begin_block("dd_edit"); %>
                <li><a href="#" data-key="undo">Undo</a></li>
                <li><a href="#" data-key="redo">Redo</a></li>
+               <% e.end_block(); %>
             </li>
         </ul>
      <li>
@@ -33,6 +38,7 @@
         <a href="#">Format</a>
         <ul>
             <li>
+               <% e.begin_block("dd_format"); %>
                <li><a href="#" data-key="bold"><u>B</u>old</a></li>
                <li><a href="#" data-key="italic"><u>I</u>talic</a></li>
                <li><a href="#" data-key="underline"><u>U</u>nderline</a></li>
@@ -44,16 +50,31 @@
                <li><a href="#" data-key="outdent">Outdent</a></li>
                <hr></hr>
                <li><a href="#" data-key="clearauthorship">Clear Authorship Colors</a></li>
+               <% e.end_block(); %>
+
             </li>
         </ul>
+   </li>
 
+
+    <li>
+       <a href="#">Insert</a>
+       <ul>
+         <li>
+           <% e.begin_block("dd_format"); %>
+           <% e.end_block(); %>
+          </li>
+       </ul>
     </li>
+
 
    <li>
         <a href="#">View</a>
         <ul>
             <li>
+               <% e.begin_block("dd_view"); %>
                <li><a href="#" onClick="chat.stickToScreen();">Chat</a></li>
+               <% e.end_block(); %>
             </li>
         </ul>
 
@@ -62,13 +83,14 @@
         <a href="#">Help</a>
         <ul>
             <li>
-               <li>File Menu Toolbar plugin by John McLear</li>
+               <% e.begin_block("dd_help"); %>
+               <li><a href="http://mclear.co.uk" target="_blank">File Menu Toolbar plugin by John McLear</a></li>
+               <% e.end_block(); %>
             </li>
         </ul>
 
     </li>
-
-
+    <% e.end_block(); %>
 </ul>
 
 <style type="text/css">
