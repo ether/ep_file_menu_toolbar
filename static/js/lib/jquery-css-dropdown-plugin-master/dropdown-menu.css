@@ -2,6 +2,7 @@
 /* Root menu */
 .dropdown-menu {
     background: #FFF;
+    color:#393939;
 }
 /* Root links */
 .dropdown-menu a,
