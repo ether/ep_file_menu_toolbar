@@ -78,8 +78,11 @@
 
                                                         // For some reason Chrome has a horrible bug where it opens the File menu if this isn't included
                                                         var rootElement = $(e.fromElement).parent().parent().attr('class');
-                                                        if(rootElement) if(rootElement.indexOf("toolbar") !== -1) return;
-
+                                                        if(rootElement){
+                                                          if(rootElement.indexOf("toolbar") == -1){ // wut
+                                                            return false;
+                                                          }
+                                                        }
 							clearTimeout($(this).data('close_timer'));
 							clearTimeout($(this).data('open_timer'));
 
