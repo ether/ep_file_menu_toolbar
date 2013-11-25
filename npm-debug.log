@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.4
+4 verbose publish [ '.' ]
+5 verbose read json /home/jose/etherpad-lite/node_modules/ep_aa_file_menu_toolbar/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/jose/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+14 verbose folder .
+15 info prepublish ep_aa_file_menu_toolbar@0.0.5
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /home/jose/.npm/3a52ce78-.lock
+18 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+19 verbose lock /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz /home/jose/.npm/008d7a39-71584-0-7111796177923679-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+23 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+24 verbose tar unpack /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+25 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+26 verbose lock /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package /home/jose/.npm/0681534c-71584-0-7111796177923679-package.lock
+27 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+28 verbose lock /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz /home/jose/.npm/008d7a39-71584-0-7111796177923679-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry eejs.js
+34 silly gunzTarPerm extractEntry index.js
+35 silly gunzTarPerm extractEntry README.md.save
+36 silly gunzTarPerm extractEntry ep.json
+37 silly gunzTarPerm extractEntry static/js/index.js
+38 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/README.md
+39 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.js
+40 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.min.js
+41 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/arrows-000000.png
+42 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/arrows-ffffff.png
+43 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu-skin.css
+44 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.css
+45 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/lib/jquery-1.8.3.min.js
+46 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/readme.html
+47 silly gunzTarPerm extractEntry templates/toolbar.ejs
+48 verbose read json /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package/package.json
+49 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+50 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+51 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+52 silly lockFile 008d7a39-71584-0-7111796177923679-tmp-tgz /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/tmp.tgz
+53 verbose from cache /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package/package.json
+54 verbose tar pack [ '/home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz',
+54 verbose tar pack   '/home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package' ]
+55 verbose tarball /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+56 verbose folder /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+57 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+58 verbose lock /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package /home/jose/.npm/0681534c-71584-0-7111796177923679-package.lock
+59 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+60 verbose lock /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz /home/jose/.npm/89a2ebed-e-menu-toolbar-0-0-5-package-tgz.lock
+61 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+62 silly lockFile 0681534c-71584-0-7111796177923679-package /home/jose/tmp/npm-5312/1385398771584-0.7111796177923679/package
+63 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+64 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+65 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+66 verbose lock /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package /home/jose/.npm/872d2a1f--file-menu-toolbar-0-0-5-package.lock
+67 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+68 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+69 verbose tar unpack /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+70 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+71 verbose lock /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package /home/jose/.npm/872d2a1f--file-menu-toolbar-0-0-5-package.lock
+72 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+73 verbose lock /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz /home/jose/.npm/89a2ebed-e-menu-toolbar-0-0-5-package-tgz.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry .npmignore
+77 silly gunzTarPerm extractEntry README.md
+78 silly gunzTarPerm extractEntry eejs.js
+79 silly gunzTarPerm extractEntry index.js
+80 silly gunzTarPerm extractEntry README.md.save
+81 silly gunzTarPerm extractEntry ep.json
+82 silly gunzTarPerm extractEntry static/js/index.js
+83 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/README.md
+84 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.js
+85 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.min.js
+86 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/arrows-000000.png
+87 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/arrows-ffffff.png
+88 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu-skin.css
+89 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.css
+90 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/lib/jquery-1.8.3.min.js
+91 silly gunzTarPerm extractEntry static/js/lib/jquery-css-dropdown-plugin-master/readme.html
+92 silly gunzTarPerm extractEntry templates/toolbar.ejs
+93 verbose read json /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package/package.json
+94 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+95 silly lockFile 872d2a1f--file-menu-toolbar-0-0-5-package /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package
+96 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+97 silly lockFile 89a2ebed-e-menu-toolbar-0-0-5-package-tgz /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+98 silly shasum updated bytes 45736
+99 info shasum 7692f2a69f332e32c0505ef9b8221f23847bae66
+99 info shasum /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz
+100 verbose from cache /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package/package.json
+101 verbose chmod /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz 644
+102 verbose chown /home/jose/.npm/ep_aa_file_menu_toolbar/0.0.5/package.tgz [ 1000, 1000 ]
+103 silly lockFile 3a52ce78- .
+104 silly publish { name: 'ep_aa_file_menu_toolbar',
+104 silly publish   description: 'File / Menu style toolbar',
+104 silly publish   version: '0.0.5',
+104 silly publish   author:
+104 silly publish    { name: 'johnyma22',
+104 silly publish      email: 'john@mclear.co.uk',
+104 silly publish      url: 'John McLear' },
+104 silly publish   dependencies: {},
+104 silly publish   engines: { node: '>= 0.4.1' },
+104 silly publish   repository:
+104 silly publish    { type: 'git',
+104 silly publish      url: 'https://github.com/JohnMcLear/ep_file_menu_toolbar.git' },
+104 silly publish   readme: '# A simple to use and responsive File menu / toolbar\n\n![Screenshot](https://i.imgur.com/QDiux10.jpg "Screen shot of Etherpad File Menu Toolbar")\n\n## Installation\nInstall using /admin/plugins or npm install ep_file_menu_toolbar\n\n## TODO\n* i18n support\n* Test against weird wrap/pad scrolling edge cases\n* Clean refactor <-- see .ejs file!\n',
+104 silly publish   readmeFilename: 'README.md',
+104 silly publish   _id: 'ep_aa_file_menu_toolbar@0.0.5',
+104 silly publish   dist: { shasum: '7692f2a69f332e32c0505ef9b8221f23847bae66' },
+104 silly publish   _from: '.' }
+105 verbose url raw ep_aa_file_menu_toolbar
+106 verbose url resolving [ 'https://registry.npmjs.org/', './ep_aa_file_menu_toolbar' ]
+107 verbose url resolved https://registry.npmjs.org/ep_aa_file_menu_toolbar
+108 info trying registry request attempt 1 at 16:59:42
+109 http PUT https://registry.npmjs.org/ep_aa_file_menu_toolbar
+110 http 409 https://registry.npmjs.org/ep_aa_file_menu_toolbar
+111 verbose url raw ep_aa_file_menu_toolbar
+112 verbose url resolving [ 'https://registry.npmjs.org/', './ep_aa_file_menu_toolbar' ]
+113 verbose url resolved https://registry.npmjs.org/ep_aa_file_menu_toolbar
+114 info trying registry request attempt 1 at 16:59:43
+115 http GET https://registry.npmjs.org/ep_aa_file_menu_toolbar
+116 http 200 https://registry.npmjs.org/ep_aa_file_menu_toolbar
+117 error publish fail Cannot publish over existing version.
+117 error publish fail Update the 'version' field in package.json and try again.
+117 error publish fail
+117 error publish fail If the previous version was published in error, see:
+117 error publish fail     npm help unpublish
+117 error publish fail
+117 error publish fail To automatically increment version numbers, see:
+117 error publish fail     npm help version
+118 error System Linux 3.5.0-18-generic
+119 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+120 error cwd /home/jose/etherpad-lite/node_modules/ep_aa_file_menu_toolbar
+121 error node -v v0.10.4
+122 error npm -v 1.2.18
+123 error code EPUBLISHCONFLICT
+124 verbose exit [ 1, true ]
