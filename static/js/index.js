@@ -8,3 +8,16 @@ exports.documentReady = function(){
     });
   });
 }
+
+function printPad(){
+
+  window.print();
+
+  // In chrome you have to fire the window.location.reload event to fire a print event.. More evidence Google = Microsoft
+  // http://stackoverflow.com/questions/18622626/chrome-window-print-print-dialogue-opens-only-after-page-reload-javascript
+
+  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
+    window.location.reload(); // Chrome is really broken here..
+  }
+
+}

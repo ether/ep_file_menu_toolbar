@@ -17,7 +17,7 @@
                <li onclick="document.location = document.location.pathname+ '/timeslider'"><a href="#" id="timesliderlink">Timeslider</a></li>
                <hr></hr>
                <li><a href="#" data-key="settings">Pad Settings</a></li>
-               <li><a href="#" data-key="print" onClick="window.print()">Print</a></li>
+               <li><a href="#" data-key="print" onClick="printPad()">Print</a></li>
                <li><a href="#" data-key="embed" id="embedlink">Share & Embed</a></li>
                <% e.end_block(); %>
             </li>
@@ -134,3 +134,16 @@
 </style>
 
 <script src="../static/js/jquery.js"></script>
+
+<script>
+function printPad(){
+  window.print();
+
+  // In chrome you have to fire the window.location.reload event to fire a print event.. More evidence Google = Microsoft
+  // http://stackoverflow.com/questions/18622626/chrome-window-print-print-dialogue-opens-only-after-page-reload-javascript
+  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){             
+    window.location.reload(); // Chrome is really broken here..
+  }  
+
+}
+</script>
