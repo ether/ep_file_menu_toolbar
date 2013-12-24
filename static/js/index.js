@@ -7,6 +7,7 @@ exports.documentReady = function(){
       });
     });
   });
+  $('#newPad').attr("href", "/p/"+randomPadName());
 }
 
 function printPad(){
@@ -20,4 +21,15 @@ function printPad(){
     window.location.reload(); // Chrome is really broken here..
   }
 
+}
+
+function randomPadName(){
+  var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  var string_length = 10;
+  var randomstring = '';
+  for (var i = 0; i < string_length; i++){
+    var rnum = Math.floor(Math.random() * chars.length);
+    randomstring += chars.substring(rnum, rnum + 1);
+  }
+  return randomstring;
 }
