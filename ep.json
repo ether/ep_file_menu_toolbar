@@ -1,7 +1,7 @@
 {
   "parts": [
     {
-      "name": "file_menu_toolbar",
+      "name": "aa_file_menu_toolbar",
       "client_hooks": {
         "postAceInit": "ep_aa_file_menu_toolbar/static/js/index:documentReady"
       },
