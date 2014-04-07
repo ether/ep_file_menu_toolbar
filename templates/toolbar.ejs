@@ -6,9 +6,9 @@
             <li>
                <% e.begin_block("dd_file"); %>
                <li><a href target="_blank" id="newPad">New</a></li>
-               <li><a href="#" data-key="save" id="revisionlink"><u>S</u>ave</a></li>
-               <li><a href="#" id="importexportlink" data-key="import_export" class="acl-write">Import</a></li>
-               <li><a href="#" data-key="export">Export</a>
+               <li><a href="#" data-key="save" id="revisionlink" data-type="button"><u>S</u>ave</a></li>
+               <li><a href="#" id="importexportlink" data-key="import_export" class="acl-write" data-type="button">Import</a></li>
+               <li><a href="#" data-key="export" data-type="button">Export</a>
                  <ul class="submenu">
                     <li><a href="#" id="exportplaina">Text</a></li>
                     <li><a href="#" id="exporthtmla">HTML</a></li>
@@ -17,9 +17,9 @@
                <hr></hr>
                <li onclick="document.location = document.location.pathname+ '/timeslider'"><a href="#" id="timesliderlink">Timeslider</a></li>
                <hr></hr>
-               <li><a href="#" data-key="settings">Pad Settings</a></li>
-               <li><a href="#" data-key="print" onClick="printPad()">Print</a></li>
-               <li><a href="#" data-key="embed" id="embedlink">Share & Embed</a></li>
+               <li><a href="#" data-key="settings" data-type="button">Pad Settings</a></li>
+               <li><a href="#" data-key="print" onClick="printPad()" data-type="button">Print</a></li>
+               <li><a href="#" data-key="embed" id="embedlink" data-type="button">Share & Embed</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
@@ -40,17 +40,17 @@
         <ul>
             <li>
                <% e.begin_block("dd_format"); %>
-               <li id="bold"><a href="#" data-key="bold"><u>B</u>old</a></li>
-               <li id="italic"><a href="#" data-key="italic"><u>I</u>talic</a></li>
-               <li id="underline"><a href="#" data-key="underline"><u>U</u>nderline</a></li>
-               <li id="strikethrough"><a href="#" data-key="strikethrough">Strikethrough</a></li>
+               <li id="bold"><a href="#" data-key="bold" data-type="button"><u>B</u>old</a></li>
+               <li id="italic"><a href="#" data-key="italic" data-type="button"><u>I</u>talic</a></li>
+               <li id="underline"><a href="#" data-key="underline" data-type="button"><u>U</u>nderline</a></li>
+               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button">Strikethrough</a></li>
                <hr></hr>
-               <li><a href="#" data-key="insertorderedlist">Ordered List</a></li>
-               <li><a href="#" data-key="insertunorderedlist">Unordered list</a></li>
-               <li><a href="#" data-key="indent">Indent</a></li>
-               <li><a href="#" data-key="outdent">Outdent</a></li>
+               <li><a href="#" data-key="insertorderedlist" data-type="button">Ordered List</a></li>
+               <li><a href="#" data-key="insertunorderedlist" data-type="button">Unordered list</a></li>
+               <li><a href="#" data-key="indent" data-type="button">Indent</a></li>
+               <li><a href="#" data-key="outdent" data-type="button">Outdent</a></li>
                <hr></hr>
-               <li><a href="#" data-key="clearauthorship">Clear Authorship Colors</a></li>
+               <li><a href="#" data-key="clearauthorship" data-type="button">Clear Authorship Colors</a></li>
                <% e.end_block(); %>
 
             </li>
