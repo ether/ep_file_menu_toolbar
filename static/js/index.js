@@ -8,6 +8,15 @@ exports.documentReady = function(){
     });
   });
   $('#newPad').attr("href", "/p/"+randomPadName());
+
+  var exports = $('#exportColumn').children("a");
+  $.each(exports, function(k,v){
+    var href = $(v).attr('href');
+    var txt = $(v).text();
+    var html = "<a class='exportlink' href='"+href+"'><div class='exportttype'>"+txt+"</div></a>";
+    $('#file_menu_exports > .submenu').append(html);
+  });
+  
 }
 
 function printPad(){
