@@ -7,7 +7,6 @@
       },
       "hooks": {
         "eejsBlock_body":"ep_aa_file_menu_toolbar/eejs",
-        "clientVars":"ep_aa_file_menu_toolbar/index:clientVars",
         "eejsBlock_styles":"ep_aa_file_menu_toolbar/eejs"
       }
     }
