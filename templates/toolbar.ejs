@@ -1,4 +1,4 @@
-<ul class="dropdown-menu" id="editbar">
+<ul class="dropdown-menu">
     <% e.begin_block("dd_dropdownMenu"); %>
     <li>
         <a href="#">File</a>
@@ -38,17 +38,17 @@
         <ul>
             <li>
                <% e.begin_block("dd_format"); %>
-               <li id="bold"><a href="#" data-key="bold" data-type="button"><u>B</u>old</a></li>
-               <li id="italic"><a href="#" data-key="italic" data-type="button"><u>I</u>talic</a></li>
-               <li id="underline"><a href="#" data-key="underline" data-type="button"><u>U</u>nderline</a></li>
-               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button">Strikethrough</a></li>
+               <li id="bold"><a href="#" data-key="bold" data-type="button" onClick="$('.buttonicon-bold').click();"><u>B</u>old</a></li>
+               <li id="italic"><a href="#" data-key="italic" data-type="button" onClick="$('.buttonicon-italic').click();"><u>I</u>talic</a></li>
+               <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();"><u>U</u>nderline</a></li>
+               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();">Strikethrough</a></li>
                <hr></hr>
-               <li><a href="#" data-key="insertorderedlist" data-type="button">Ordered List</a></li>
-               <li><a href="#" data-key="insertunorderedlist" data-type="button">Unordered list</a></li>
-               <li><a href="#" data-key="indent" data-type="button">Indent</a></li>
-               <li><a href="#" data-key="outdent" data-type="button">Outdent</a></li>
+               <li><a href="#" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
+               <li><a href="#" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
+               <li><a href="#" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
+               <li><a href="#" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
                <hr></hr>
-               <li><a href="#" data-key="clearauthorship" data-type="button">Clear Authorship Colors</a></li>
+               <li><a href="#" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
                <% e.end_block(); %>
 
             </li>
