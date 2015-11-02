@@ -16,7 +16,9 @@ exports.documentReady = function(){
     var html = "<a class='exportlink' href='"+href+"'><div class='exportttype'>"+txt+"</div></a>";
     $('#file_menu_exports > .submenu').append(html);
   });
-  
+  $("#importexportlink").click(function(){
+    $('#importfileinput').click();
+  });
 }
 
 function printPad(){
