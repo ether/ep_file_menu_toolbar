@@ -20,6 +20,22 @@ exports.documentReady = function(){
     $('#importfileinput').click();
     $('#import_export').addClass("popup-show");
   });
+
+  $("#filemenutoolbarsettings").click(function(){
+    $('#settings').addClass("popup-show");
+  });
+
+  $("#filemenutoolbarembed").click(function(){
+    $('#embed').addClass("popup-show");
+  });
+
+  $("body").on("click", ".dropdown-menu-sub-indicator *[data-key='undo']", function(){
+    $("#editbar").find("*[data-key='undo']").click();
+  });
+
+  $("body").on("click", ".dropdown-menu-sub-indicator *[data-key='redo']", function(){
+    $("#editbar").find("*[data-key='red']").click();
+  });
 }
 
 function printPad(){
