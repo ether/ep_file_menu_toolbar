@@ -53,7 +53,7 @@ jobs:
         - "git clone https://github.com/ether/etherpad-lite.git etherpad"
         - "cd etherpad"
         - "mkdir node_modules"
-        - "mv ../ep_file_menu_toolbar node_modules"
+        - "mv ../ep_file_menu_toolbar node_modules/ep_aa_file_menu_toolbar"
         - "bin/installDeps.sh"
         - "export GIT_HASH=$(git rev-parse --verify --short HEAD)"
       script:
