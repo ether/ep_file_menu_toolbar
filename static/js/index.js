@@ -18,6 +18,7 @@ exports.documentReady = function(){
   });
   $("#importexportlink").click(function(){
     $('#importfileinput').click();
+    $('#import_export').addClass("popup-show");
   });
 }
 
