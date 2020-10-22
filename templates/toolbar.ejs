@@ -5,10 +5,10 @@
         <ul>
             <li>
                <% e.begin_block("dd_file"); %>
-               <li><a href target="_blank" id="newPad">New</a></li>
-               <li><a href="#" data-key="save" id="revisionlink" data-type="button"><u>S</u>ave</a></li>
-               <li><a href="#" id="importexportlink" data-key="import_export" class="acl-write" data-type="button">Import</a></li>
-               <li id="file_menu_exports"><a href="#" data-key="export" data-type="button">Export</a>
+               <li><a href target="_blank" id="newPad" data-l10n-id="index.newPad">New</a></li>
+               <li><a href="#" data-key="save" id="revisionlink" data-type="button" data-l10n-id="pad.toolbar.savedRevision.title"><u>S</u>ave</a></li>
+               <li><a href="#" id="importexportlink" data-key="import_export" class="acl-write" data-type="button" data-l10n-id="pad.impexp.importbutton">Import</a></li>
+               <li id="file_menu_exports"><a href="#" data-key="export" data-type="button" data-l10n-id="pad.importExport.export">Export</a>
                  <ul class="submenu">
                  </ul>
                </li>
@@ -41,7 +41,7 @@
                <li id="bold"><a href="#" data-key="bold" data-type="button" onClick="$('.buttonicon-bold').click();"><u>B</u>old</a></li>
                <li id="italic"><a href="#" data-key="italic" data-type="button" onClick="$('.buttonicon-italic').click();"><u>I</u>talic</a></li>
                <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();"><u>U</u>nderline</a></li>
-               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();">Strikethrough</a></li>
+               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();" data-l10n-id="pad.toolbar.strikethrough.title">Strikethrough</a></li>
                <hr></hr>
                <li><a href="#" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
                <li><a href="#" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
@@ -75,7 +75,7 @@
                <li><a href="#" onClick="$('#options-colorscheck').click();">Authorship colors</a></li>
                <li><a href="#" onClick="$('#options-linenoscheck').click();">Line Numbers</a></li>
                <li><a href="#" onClick="chat.stickToScreen();">Chat Always Visible</a></li>
-               <li><a href="#" onClick="$('#timesliderlink').click();">Timeslider</a></li>
+               <li data-l10n-id="pad.toolbar.timeslider.title"><a href="#" onClick="$('#timesliderlink').click();" data-l10n-id="pad.toolbar.timeslider.title">Timeslider</a></li>
                <li><a href="#" onClick="$('#options-rtlcheck').click();">Text Right to Left</a></li>
                <% e.end_block(); %>
             </li>
