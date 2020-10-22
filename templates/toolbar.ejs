@@ -13,22 +13,22 @@
                  </ul>
                </li>
                <hr></hr>
-               <li onclick="document.location = document.location.pathname+ '/timeslider'"><a href="#" id="timesliderlink">Timeslider</a></li>
+               <li onclick="document.location = document.location.pathname+ '/timeslider'"><a data-l10n-id="pad.toolbar.timeslider.title" href="#" id="timesliderlink">Timeslider</a></li>
                <hr></hr>
-               <li><a href="#" id="filemenutoolbarsettings" data-key="settings" data-type="button">Pad Settings</a></li>
-               <li><a href="#" data-key="print" onClick="printPad()" data-type="button">Print</a></li>
-               <li><a href="#" id="filemenutoolbarembed" data-key="embed" id="embedlink" data-type="button">Share & Embed</a></li>
+               <li><a href="#" id="filemenutoolbarsettings" data-key="settings" data-type="button" data-l10n-id="pad.settings.padSettings">Pad Settings</a></li>
+               <li><a href="#" data-key="print" onClick="printPad()" data-type="button" data-l10n-id="">Print</a></li>
+               <li><a href="#" id="filemenutoolbarembed" data-key="embed" id="embedlink" data-type="button" data-l10n-id="pad.toolbar.embed.title">Share & Embed</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
     </li>
     <li class="acl-write">
-        <a href="#">Edit</a>
+        <a href="#" data-l10n-id="">Edit</a>
         <ul>
             <li>
                <% e.begin_block("dd_edit"); %>
-               <li><a href="#" data-key="undo">Undo</a></li>
-               <li><a href="#" data-key="redo">Redo</a></li>
+               <li><a href="#" data-key="undo" data-l10n-id="pad.toolbar.undo.title">Undo</a></li>
+               <li><a href="#" data-key="redo" data-l10n-id="pad.toolbar.redo.title">Redo</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
@@ -43,12 +43,12 @@
                <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();"><u>U</u>nderline</a></li>
                <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();" data-l10n-id="pad.toolbar.strikethrough.title">Strikethrough</a></li>
                <hr></hr>
-               <li><a href="#" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
-               <li><a href="#" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
-               <li><a href="#" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
-               <li><a href="#" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
+               <li><a href="#" data-l10n-id="pad.toolbar.ol.title" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
+               <li><a href="#" data-l10n-id="pad.toolbar.ul.title" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
+               <li><a href="#" data-l10n-id="pad.toolbar.indent.title" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
+               <li><a href="#" data-l10n-id="pad.toolbar.unindent.title" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
                <hr></hr>
-               <li><a href="#" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
+               <li><a href="#" data-l10n-id="pad.toolbar.clearAuthorship.title" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
                <% e.end_block(); %>
 
             </li>
@@ -72,11 +72,11 @@
         <ul>
             <li>
                <% e.begin_block("dd_view"); %>
-               <li><a href="#" onClick="$('#options-colorscheck').click();">Authorship colors</a></li>
-               <li><a href="#" onClick="$('#options-linenoscheck').click();">Line Numbers</a></li>
-               <li><a href="#" onClick="chat.stickToScreen();">Chat Always Visible</a></li>
-               <li data-l10n-id="pad.toolbar.timeslider.title"><a href="#" onClick="$('#timesliderlink').click();" data-l10n-id="pad.toolbar.timeslider.title">Timeslider</a></li>
-               <li><a href="#" onClick="$('#options-rtlcheck').click();">Text Right to Left</a></li>
+               <li><a href="#" data-l10n-id="pad.settings.colorcheck" onClick="$('#options-colorscheck').click();">Authorship colors</a></li>
+               <li><a href="#" data-l10n-id="pad.settings.linenocheck" onClick="$('#options-linenoscheck').click();">Line Numbers</a></li>
+               <li><a href="#" data-l10n-id="pad.settings.stickychat" onClick="chat.stickToScreen();">Chat Always Visible</a></li>
+               <li><a href="#" onClick="$('#timesliderlink').click();" data-l10n-id="pad.toolbar.timeslider.title">Timeslider</a></li>
+               <li><a href="#" data-l10n-id="pad.settings.rtlcheck" onClick="$('#options-rtlcheck').click();">Text Right to Left</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
