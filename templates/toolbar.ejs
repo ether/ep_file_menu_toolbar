@@ -97,12 +97,6 @@
 </ul>
 
 <style type="text/css">
-#editorcontainerbox{
-  top:23px;
-}
-.stickyChat{
-  top:61px;
-}
 .dropdown-menu-sub-indicator > ul {
   border:1px solid rgb(204, 204, 204);
   border-radius:0px 0px 6px 6px;
@@ -122,13 +116,6 @@
   .dropdown-menu{
     display:none;
   } 
-  #editorcontainerbox{
-    top:0;
-  }
-}
-
-#settings, #importexport, #embed, #connectivity, #users {
-  top:59px;
 }
 </style>
 
@@ -137,12 +124,5 @@
 <script>
 function printPad(){
   window.print();
-
-  // In chrome you have to fire the window.location.reload event to fire a print event.. More evidence Google = Microsoft
-  // http://stackoverflow.com/questions/18622626/chrome-window-print-print-dialogue-opens-only-after-page-reload-javascript
-  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){             
-    window.location.reload(); // Chrome is really broken here..
-  }  
-
 }
 </script>
