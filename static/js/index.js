@@ -1,4 +1,7 @@
-exports.documentReady = function () {
+'use strict';
+
+exports.documentReady = () => {
+  /* eslint-disable-next-line max-len */
   $.getScript('../static/plugins/ep_aa_file_menu_toolbar/static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.js', () => {
     $(() => {
       $('.dropdown-menu').dropdown_menu({
@@ -38,18 +41,13 @@ exports.documentReady = function () {
   });
 };
 
-function printPad() {
-  window.print();
+/* eslint-disable-next-line no-unused-vars */
+const printPad = () => {
+  const pad = $('iframe[name="ace_outer"]').contents().find('iframe[name="ace_inner"]')[0];
+  pad.contentWindow.print();
+};
 
-  // In chrome you have to fire the window.location.reload event to fire a print event.. More evidence Google = Microsoft
-  // http://stackoverflow.com/questions/18622626/chrome-window-print-print-dialogue-opens-only-after-page-reload-javascript
-
-  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-    window.location.reload(); // Chrome is really broken here..
-  }
-}
-
-function randomPadName() {
+const randomPadName = () => {
   const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
   const string_length = 10;
   let randomstring = '';
@@ -58,4 +56,4 @@ function randomPadName() {
     randomstring += chars.substring(rnum, rnum + 1);
   }
   return randomstring;
-}
+};

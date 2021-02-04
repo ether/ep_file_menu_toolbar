@@ -1,3 +1,5 @@
+'use strict';
+
 describe('File Menu Toolbar', function () {
   // create a new pad before each test run
   beforeEach(function (cb) {
@@ -23,7 +25,8 @@ describe('File Menu Toolbar', function () {
     const $boldButton = chrome$('.dropdown-menu #bold > a');
     $boldButton.click();
 
-    // ace creates a new dom element when you press a button, so just get the first text element again
+    // ace creates a new dom element when you press a button
+    // so just get the first text element again
     const $newFirstTextElement = inner$('div').first();
 
     // is there a <b> element now?
@@ -52,10 +55,9 @@ describe('File Menu Toolbar', function () {
     const $boldButton = chrome$('.dropdown-menu #bold > a');
     $boldButton.click();
 
-    //	click it again to disable boldness
+    // click it again to disable boldness
     $boldButton.click();
 
-    // ace creates a new dom element when you press a button, so just get the first text element again
     const $newFirstTextElement = inner$('div').first();
 
     // is there a <b> element now?
