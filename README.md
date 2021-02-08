@@ -1,3 +1,5 @@
+![Publish Status](https://github.com/ether/ep_file_menu_toolbar/workflows/Node.js%20Package/badge.svg) ![Backend Tests Status](https://github.com/ether/ep_file_menu_toolbar/workflows/Backend%20tests/badge.svg)
+
 # A simple to use and responsive File menu / toolbar
 
 ![Screenshot](https://i.imgur.com/QDiux10.jpg "Screen shot of Etherpad File Menu Toolbar")
