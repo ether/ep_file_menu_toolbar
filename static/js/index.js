@@ -10,7 +10,7 @@ exports.documentReady = () => {
       });
     });
   });
-  $('#newPad').attr('href', `/p/${randomPadName()}`);
+  $('#newPad').attr('href', `./${randomPadName()}`);
 
   const exports = $('#exportColumn').children('a');
   $.each(exports, (k, v) => {
