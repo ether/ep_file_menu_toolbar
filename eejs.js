@@ -5,7 +5,7 @@ const eejs = require('ep_etherpad-lite/node/eejs/');
 exports.eejsBlock_styles = (hookName, args, cb) => {
   const css = eejs.require(
       'ep_aa_file_menu_toolbar/static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.css',
-      {}, module
+      {}, module,
   );
   args.content = `${args.content}
     <style type='text/css'>${css}</style>`;
