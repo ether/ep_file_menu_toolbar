@@ -1,9 +1,8 @@
 {
   "name": "ep_aa_file_menu_toolbar",
   "description": "File / Menu style toolbar",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "author": "johnyma22 (John McLear) <john@mclear.co.uk>",
-  "dependencies": {},
   "engines": {
     "node": ">=18.0.0"
   },
@@ -16,9 +15,9 @@
     "url": "https://etherpad.org/"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-etherpad": "^4.0.4",
-    "typescript": "^5.4.2"
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "lint": "eslint .",
