@@ -41,8 +41,7 @@ exports.documentReady = () => {
   });
 };
 
-/* eslint-disable-next-line no-unused-vars */
-const printPad = () => {
+window.printPad = () => {
   const pad = $('iframe[name="ace_outer"]').contents().find('iframe[name="ace_inner"]')[0];
   pad.contentWindow.print();
 };
