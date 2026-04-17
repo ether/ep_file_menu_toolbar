@@ -1,4 +1,4 @@
-![Publish Status](https://github.com/ether/ep_file_menu_toolbar/workflows/Node.js%20Package/badge.svg) [![Backend Tests Status](https://github.com/ether/ep_file_menu_toolbar/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_file_menu_toolbar/actions/workflows/test-and-release.yml)
+![Demo](demo.gif) [![Backend Tests Status](https://github.com/ether/ep_file_menu_toolbar/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_file_menu_toolbar/actions/workflows/test-and-release.yml)
 
 # A simple to use and responsive File menu / toolbar
 
