@@ -3,11 +3,11 @@
     {
       "name": "aa_file_menu_toolbar",
       "client_hooks": {
-        "postAceInit": "ep_aa_file_menu_toolbar/static/js/index:documentReady"
+        "postAceInit": "ep_file_menu_toolbar/static/js/index:documentReady"
       },
       "hooks": {
-        "eejsBlock_body":"ep_aa_file_menu_toolbar/eejs",
-        "eejsBlock_styles":"ep_aa_file_menu_toolbar/eejs"
+        "eejsBlock_body":"ep_file_menu_toolbar/eejs",
+        "eejsBlock_styles":"ep_file_menu_toolbar/eejs"
       }
     }
   ]
