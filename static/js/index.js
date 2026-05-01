@@ -2,7 +2,7 @@
 
 exports.documentReady = () => {
   /* eslint-disable-next-line max-len */
-  $.getScript('../static/plugins/ep_aa_file_menu_toolbar/static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.js', () => {
+  $.getScript('../static/plugins/ep_file_menu_toolbar/static/js/lib/jquery-css-dropdown-plugin-master/dropdown-menu.js', () => {
     $(() => {
       $('.dropdown-menu').dropdown_menu({
         open_delay: 50, // Delay on menu open
