@@ -7,7 +7,7 @@
 ## Installation
 Install using /admin/plugins 
 OR
-``git clone git@github.com:JohnMcLear/ep_file_menu_toolbar.git ep_aa_file_menu_toolbar``
+``git clone git@github.com:ether/ep_file_menu_toolbar.git``
 
 ## TODO
 * i18n support
