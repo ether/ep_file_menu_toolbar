@@ -1,6 +1,6 @@
 'use strict';
 
-const eejs = require('ep_etherpad-lite/node/eejs/');
+const eejs = require('ep_etherpad-lite/node/eejs');
 
 exports.eejsBlock_styles = (hookName, args, cb) => {
   const css = eejs.require(
