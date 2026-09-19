@@ -32,24 +32,36 @@
                <% e.end_block(); %>
             </li>
         </ul>
-     <li>
+     </li>
      <li class="acl-write">
         <a href="#">Format</a>
         <ul>
             <li>
-               <% e.begin_block("dd_format"); %>
+               <!-- Character formatting. Plugins that style a *selection*
+                    (subscript, superscript, ...) append themselves here. -->
+               <% e.begin_block("dd_format_text"); %>
                <li id="bold"><a href="#" data-key="bold" data-type="button" onClick="$('.buttonicon-bold').click();"><u>B</u>old</a></li>
                <li id="italic"><a href="#" data-key="italic" data-type="button" onClick="$('.buttonicon-italic').click();"><u>I</u>talic</a></li>
                <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();"><u>U</u>nderline</a></li>
                <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();" data-l10n-id="pad.toolbar.strikethrough.title">Strikethrough</a></li>
+               <% e.end_block(); %>
                <hr></hr>
+               <!-- Paragraph formatting. Plugins that style whole *lines*
+                    (headings, alignment, ...) append themselves here. -->
+               <% e.begin_block("dd_format_block"); %>
                <li><a href="#" data-l10n-id="pad.toolbar.ol.title" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
                <li><a href="#" data-l10n-id="pad.toolbar.ul.title" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
                <li><a href="#" data-l10n-id="pad.toolbar.indent.title" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
                <li><a href="#" data-l10n-id="pad.toolbar.unindent.title" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
+               <% e.end_block(); %>
+               <hr></hr>
+               <!-- Everything else a plugin wants in Format (font pickers,
+                    clear formatting, ...). Kept for backwards compatibility:
+                    this is the block plugins have always hooked. -->
+               <% e.begin_block("dd_format"); %>
+               <% e.end_block(); %>
                <hr></hr>
                <li><a href="#" data-l10n-id="pad.toolbar.clearAuthorship.title" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
-               <% e.end_block(); %>
 
             </li>
         </ul>
@@ -111,6 +123,11 @@
 }
 .dropdown-menu-sub-indicator > ul > hr{
   margin:10px 0px 10px 0px;
+}
+/* An extension block that no plugin filled in leaves two separators next to
+   each other. Collapse them so the menu never shows an empty group. */
+.dropdown-menu-sub-indicator > ul > hr + hr{
+  display:none;
 }
 @media all and (max-width: 400px){
   .dropdown-menu{

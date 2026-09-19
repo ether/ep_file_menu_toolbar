@@ -37,7 +37,7 @@ exports.documentReady = () => {
   });
 
   $('body').on('click', ".dropdown-menu-sub-indicator *[data-key='redo']", () => {
-    $('#editbar').find("*[data-key='red']").click();
+    $('#editbar').find("*[data-key='redo']").click();
   });
 };
 
