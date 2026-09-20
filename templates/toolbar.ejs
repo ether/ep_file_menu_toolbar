@@ -1,58 +1,58 @@
 <ul class="dropdown-menu">
     <% e.begin_block("dd_dropdownMenu"); %>
     <li>
-        <a href="#">File</a>
+        <a href="#" data-l10n-id="ep_file_menu_toolbar.file">File</a>
         <ul>
             <li>
                <% e.begin_block("dd_file"); %>
                <li><a href target="_blank" id="newPad" data-l10n-id="index.newPad">New</a></li>
-               <li><a href="#" data-key="save" id="revisionlink" data-type="button" data-l10n-id="pad.toolbar.savedRevision.title"><u>S</u>ave</a></li>
+               <li><a href="#" data-key="save" id="revisionlink" data-type="button" data-l10n-id="ep_file_menu_toolbar.save">Save Revision</a></li>
                <li><a href="#" id="importexportlink" data-key="import_export" class="acl-write" data-type="button" data-l10n-id="pad.impexp.importbutton">Import</a></li>
                <li id="file_menu_exports"><a href="#" data-key="export" data-type="button" data-l10n-id="pad.importExport.export">Export</a>
                  <ul class="submenu">
                  </ul>
                </li>
                <hr></hr>
-               <li onclick="document.location = document.location.pathname+ '/timeslider'"><a data-l10n-id="pad.toolbar.timeslider.title" href="#" id="timesliderlink">Timeslider</a></li>
+               <li onclick="document.location = document.location.pathname+ '/timeslider'"><a data-l10n-id="ep_file_menu_toolbar.timeslider" href="#" id="timesliderlink">Timeslider</a></li>
                <hr></hr>
                <li><a href="#" id="filemenutoolbarsettings" data-key="settings" data-type="button" data-l10n-id="pad.settings.padSettings">Pad Settings</a></li>
-               <li><a href="#" data-key="print" onClick="printPad()" data-type="button" data-l10n-id="">Print</a></li>
-               <li><a href="#" id="filemenutoolbarembed" data-key="embed" id="embedlink" data-type="button" data-l10n-id="pad.toolbar.embed.title">Share & Embed</a></li>
+               <li><a href="#" data-key="print" onClick="printPad()" data-type="button" data-l10n-id="ep_file_menu_toolbar.print">Print</a></li>
+               <li><a href="#" id="filemenutoolbarembed" data-key="embed" id="embedlink" data-type="button" data-l10n-id="ep_file_menu_toolbar.embed">Share & Embed</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
     </li>
     <li class="acl-write">
-        <a href="#" data-l10n-id="">Edit</a>
+        <a href="#" data-l10n-id="ep_file_menu_toolbar.edit">Edit</a>
         <ul>
             <li>
                <% e.begin_block("dd_edit"); %>
-               <li><a href="#" data-key="undo" data-l10n-id="pad.toolbar.undo.title">Undo</a></li>
-               <li><a href="#" data-key="redo" data-l10n-id="pad.toolbar.redo.title">Redo</a></li>
+               <li><a href="#" data-key="undo" data-l10n-id="ep_file_menu_toolbar.undo">Undo</a></li>
+               <li><a href="#" data-key="redo" data-l10n-id="ep_file_menu_toolbar.redo">Redo</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
      </li>
      <li class="acl-write">
-        <a href="#">Format</a>
+        <a href="#" data-l10n-id="ep_file_menu_toolbar.format">Format</a>
         <ul>
             <li>
                <!-- Character formatting. Plugins that style a *selection*
                     (subscript, superscript, ...) append themselves here. -->
                <% e.begin_block("dd_format_text"); %>
-               <li id="bold"><a href="#" data-key="bold" data-type="button" onClick="$('.buttonicon-bold').click();"><u>B</u>old</a></li>
-               <li id="italic"><a href="#" data-key="italic" data-type="button" onClick="$('.buttonicon-italic').click();"><u>I</u>talic</a></li>
-               <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();"><u>U</u>nderline</a></li>
-               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();" data-l10n-id="pad.toolbar.strikethrough.title">Strikethrough</a></li>
+               <li id="bold"><a href="#" data-key="bold" data-type="button" onClick="$('.buttonicon-bold').click();" data-l10n-id="ep_file_menu_toolbar.bold">Bold</a></li>
+               <li id="italic"><a href="#" data-key="italic" data-type="button" onClick="$('.buttonicon-italic').click();" data-l10n-id="ep_file_menu_toolbar.italic">Italic</a></li>
+               <li id="underline"><a href="#" data-key="underline" data-type="button" onClick="$('.buttonicon-underline').click();" data-l10n-id="ep_file_menu_toolbar.underline">Underline</a></li>
+               <li id="strikethrough"><a href="#" data-key="strikethrough" data-type="button" onClick="$('.buttonicon-strikethrough').click();" data-l10n-id="ep_file_menu_toolbar.strikethrough">Strikethrough</a></li>
                <% e.end_block(); %>
                <hr></hr>
                <!-- Paragraph formatting. Plugins that style whole *lines*
                     (headings, alignment, ...) append themselves here. -->
                <% e.begin_block("dd_format_block"); %>
-               <li><a href="#" data-l10n-id="pad.toolbar.ol.title" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
-               <li><a href="#" data-l10n-id="pad.toolbar.ul.title" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
-               <li><a href="#" data-l10n-id="pad.toolbar.indent.title" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
-               <li><a href="#" data-l10n-id="pad.toolbar.unindent.title" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
+               <li><a href="#" data-l10n-id="ep_file_menu_toolbar.orderedList" data-key="insertorderedlist" data-type="button" onClick="$('.buttonicon-insertorderedlist').click();">Ordered List</a></li>
+               <li><a href="#" data-l10n-id="ep_file_menu_toolbar.unorderedList" data-key="insertunorderedlist" data-type="button" onClick="$('.buttonicon-insertunorderedlist').click();">Unordered list</a></li>
+               <li><a href="#" data-l10n-id="ep_file_menu_toolbar.indent" data-key="indent" data-type="button" onClick="$('.buttonicon-indent').click();">Indent</a></li>
+               <li><a href="#" data-l10n-id="ep_file_menu_toolbar.outdent" data-key="outdent" data-type="button" onClick="$('.buttonicon-outdent').click();">Outdent</a></li>
                <% e.end_block(); %>
                <hr></hr>
                <!-- Everything else a plugin wants in Format (font pickers,
@@ -61,7 +61,7 @@
                <% e.begin_block("dd_format"); %>
                <% e.end_block(); %>
                <hr></hr>
-               <li><a href="#" data-l10n-id="pad.toolbar.clearAuthorship.title" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
+               <li><a href="#" data-l10n-id="ep_file_menu_toolbar.clearAuthorship" data-key="clearauthorship" data-type="button" onClick="$('.buttonicon-clearauthorship').click();">Clear Authorship Colors</a></li>
 
             </li>
         </ul>
@@ -69,7 +69,7 @@
 
 
     <li class="acl-write">
-       <a href="#">Insert</a>
+       <a href="#" data-l10n-id="ep_file_menu_toolbar.insert">Insert</a>
        <ul>
          <li>
            <% e.begin_block("dd_insert"); %>
@@ -80,14 +80,14 @@
 
 
    <li>
-        <a href="#">View</a>
+        <a href="#" data-l10n-id="ep_file_menu_toolbar.view">View</a>
         <ul>
             <li>
                <% e.begin_block("dd_view"); %>
                <li><a href="#" data-l10n-id="pad.settings.colorcheck" onClick="$('#options-colorscheck').click();">Authorship colors</a></li>
                <li><a href="#" data-l10n-id="pad.settings.linenocheck" onClick="$('#options-linenoscheck').click();">Line Numbers</a></li>
                <li><a href="#" data-l10n-id="pad.settings.stickychat" onClick="chat.stickToScreen();">Chat Always Visible</a></li>
-               <li><a href="#" onClick="$('#timesliderlink').click();" data-l10n-id="pad.toolbar.timeslider.title">Timeslider</a></li>
+               <li><a href="#" onClick="$('#timesliderlink').click();" data-l10n-id="ep_file_menu_toolbar.timeslider">Timeslider</a></li>
                <li><a href="#" data-l10n-id="pad.settings.rtlcheck" onClick="$('#options-rtlcheck').click();">Text Right to Left</a></li>
                <% e.end_block(); %>
             </li>
@@ -95,11 +95,11 @@
 
     </li>
    <li>
-        <a href="#" class='dropdown-help'>Help</a>
+        <a href="#" class='dropdown-help' data-l10n-id="ep_file_menu_toolbar.help">Help</a>
         <ul>
             <li>
                <% e.begin_block("dd_help"); %>
-               <li><a href="http://mclear.co.uk" target="_blank">File Menu Toolbar plugin by John McLear</a></li>
+               <li><a href="http://mclear.co.uk" target="_blank" data-l10n-id="ep_file_menu_toolbar.about">File Menu Toolbar plugin by John McLear</a></li>
                <% e.end_block(); %>
             </li>
         </ul>
