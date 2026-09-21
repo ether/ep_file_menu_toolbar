@@ -1,7 +1,6 @@
 'use strict';
 
 const assert = require('assert').strict;
-const eejs = require('ep_etherpad-lite/node/eejs');
 const pluginDefs = require('ep_etherpad-lite/static/js/pluginfw/plugin_defs');
 
 const BLOCKS = ['dd_format_text', 'dd_format_block', 'dd_format'];
@@ -39,7 +38,7 @@ describe(__filename, function () {
   let html;
   let at;
 
-  before(function () {
+  before(async function () {
     html = renderToolbar();
     at = (needle) => {
       const i = html.indexOf(needle);
@@ -48,32 +47,32 @@ describe(__filename, function () {
     };
   });
 
-  it('puts dd_format_text in the character formatting group', function () {
+  it('puts dd_format_text in the character formatting group', async function () {
     // Right below Strikethrough, where ep_subscript_and_superscript and
     // friends belong — https://github.com/ether/ep_subscript_and_superscript/issues/17
     assert(at('data-key="strikethrough"') < at('id="from-dd_format_text"'));
     assert(at('id="from-dd_format_text"') < at('data-key="insertorderedlist"'));
   });
 
-  it('puts dd_format_block in the paragraph formatting group', function () {
+  it('puts dd_format_block in the paragraph formatting group', async function () {
     // Below Outdent: headings and alignment are line level formatting.
     assert(at('data-key="outdent"') < at('id="from-dd_format_block"'));
     assert(at('id="from-dd_format_block"') < at('id="from-dd_format"'));
   });
 
-  it('keeps the legacy dd_format block after the built in entries', function () {
+  it('keeps the legacy dd_format block after the built in entries', async function () {
     assert(at('data-key="outdent"') < at('id="from-dd_format"'));
   });
 
   // https://github.com/ether/ep_file_menu_toolbar/issues/21
-  it('renders Clear Authorship Colors after everything plugins add', function () {
+  it('renders Clear Authorship Colors after everything plugins add', async function () {
     for (const block of BLOCKS) {
       assert(at(`id="from-${block}"`) < at('data-key="clearauthorship"'),
           `${block} content should render before Clear Authorship Colors`);
     }
   });
 
-  it('closes every menu entry it opens', function () {
+  it('closes every menu entry it opens', async function () {
     // An unclosed <li> used to leave an extra, label-less menu in the menu bar.
     const opened = html.match(/<li[\s>]/g) || [];
     const closed = html.match(/<\/li>/g) || [];
